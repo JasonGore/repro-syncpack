@@ -1,0 +1,26 @@
+{
+  "name": "syncpack-repro",
+  "version": "1.0.0",
+  "description": "Repro.",
+  "main": "index.js",
+  "scripts": {
+    "repro": "syncpack list-mismatches --prod --dev"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "syncpack": "5.6.7"
+  },
+  "syncpack": {
+    "versionGroups": [
+      {
+        "dependencies": ["fs-extra", "node-fetch"],
+        "packages": ["syncpack-repro-b"]
+      },
+      {
+        "dependencies": ["uuid"],
+        "packages": ["syncpack-repro-c"]
+      }
+    ]
+  }
+}

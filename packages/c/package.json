@@ -1,0 +1,14 @@
+{
+    "name": "syncpack-repro-c",
+    "version": "1.0.0",
+    "description": "Repro.",
+    "main": "index.js",
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "node-fetch": "2.6.1",
+      "fs-extra": "9.0.1",
+      "uuid": "8.3.0"
+    }
+  }
+  
